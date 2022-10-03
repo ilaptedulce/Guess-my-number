@@ -1,0 +1,41 @@
+body {
+  width: 100%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+  margin-top: 100px;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  background:linear-gradient(to right,
+  #e65bf9,
+  #657ced);
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.guessField{
+  width: 300px;
+  font-weight: 500;
+  color: #663399;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 2px solid #202020;
+  font-size: 28px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  border-radius: 20px;
+}
+.disable{
+  display: none;
+}

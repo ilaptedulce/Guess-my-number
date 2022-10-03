@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number guessing game</title>
+    <link rel="stylesheet "href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+    <h1>Guess my number !</h1>
+    <p>I am thinking of a number between 1-20</p>
+    <p>Can you guess it?</p>
+      <label for="guessField">Enter a guess: </label><br>
+      <input type="number" id="guessField" class="guessField" placeholder="Enter your number.." disabled><br>
+      <button id="check" disabled>Check</button>
+    <button id="start">Start</button>
+    <button id="reset" class="disable">Reset</button>
+      <p id="guesses" class="disable">Previous guesses:</p>
+      <p id="info"></p> 
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
