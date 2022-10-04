@@ -14,7 +14,7 @@
     <p>I am thinking of a number between 1-20</p>
     <p>Can you guess it?</p>
       <label for="guessField">Enter a guess: </label><br>
-      <input type="number" id="guessField" class="guessField" placeholder="Enter your number.." disabled><br>
+      <input type="number" id="guessField" class="guessField" placeholder="Enter your number.."  min="0" max="20" disabled onkeyup="validateInput()"><br>
       <button id="check" disabled>Check</button>
     <button id="start">Start</button>
     <button id="reset" class="disable">Reset</button>

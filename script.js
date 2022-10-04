@@ -4,7 +4,6 @@ const resetBtn = document.getElementById('reset')
 const userInput = document.getElementById('guessField')
 const info = document.getElementById('info')
 const guesses = document.querySelector('#guesses')
-const container = document.querySelector('.container')
 let game
 class Game {
   #secretNr = 0
@@ -84,3 +83,12 @@ resetBtn.addEventListener('click', () => {
   game.resetGame()
   resetBtn.classList.add('disable')
 })
+userInput.addEventListener('onkeyup' , () => validateInput())
+function validateInput() {
+  if( userInput.value > 20 || userInput.value < 0){
+    checkBtn.disabled = true
+  } else {
+    checkBtn.disabled = false
+  }
+  
+}
